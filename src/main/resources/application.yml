@@ -8,7 +8,7 @@ spring:
    config:
     server:
      git:
-      default-label: main
+      default-label: master
       uri: https://github.com/Portafolio-Proyectos-Microservicios/configserver.git
       search-paths: config-data
     enabled: true
