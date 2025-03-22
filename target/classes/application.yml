@@ -2,7 +2,9 @@ server:
   port: 8888
 spring:
   application:
-  name: configserver
+   name: configserver
+  banner:
+    location: classpath:banner/banner.txt
 
   cloud:
    config:
