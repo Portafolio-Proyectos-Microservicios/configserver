@@ -26,3 +26,12 @@ eureka:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     service-url:
       defaultZone: http://localhost:8761/eureka
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      kafkaService:
+        slidingWindowSize: 10
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10s
+        permittedNumberOfCallsInHalfOpenState: 3
