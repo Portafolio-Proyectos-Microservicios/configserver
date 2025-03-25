@@ -1,6 +1,13 @@
 spring:
   application:
-    name: kafka 
+    name: kafka
+  kafka:
+    bootstrap-servers: kafka1:19091,kafka2:19092,kafka3:19093
+    consumer:
+      group-id: my-consumer-group
+      auto-offset-reset: earliest
+    producer:
+      retries: 3
 
   # Puerto en el que se ejecuta el microservicio
 server:
