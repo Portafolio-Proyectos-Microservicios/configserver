@@ -14,7 +14,7 @@ server:
 
 # Configuración de redis
 redis:
-  host: redis://127.0.0.1:6379
+  host: redis_eco
   port: 6379
 
 # Configuración de Eureka para el registro del servicio
