@@ -15,12 +15,12 @@ server:
 # Configuración de Eureka para el registro del servicio
 eureka:
   client:
-    fetch-registry: 'true'
-    register-with-eureka: 'true'
-  instance:
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    fetch-registry: true
+    register-with-eureka: true
     service-url:
       defaultZone: http://eurekaserver:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
 resilience4j.circuitbreaker:
   instances:
