@@ -4,10 +4,9 @@ spring:
 
   # Configuración de MongoDB Atlas para WebFlux
   data:
-    data:
-      redis:
-        host: redis_eco
-        port: 6379
+    redis:
+      host: redis_eco
+      port: 6379
     mongodb:
       uri: mongodb+srv://fockio94:PgjFLYVB0lya5uD7@cluster0.zjkoq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
       database: colegio
@@ -17,10 +16,6 @@ server:
   port: ${PORT:${SERVER_PORT:0}}
 
 
-
-logging:
-  level:
-    org.springframework.data.redis: DEBUG
 
 # Configuración de Eureka para el registro del servicio
 eureka:
