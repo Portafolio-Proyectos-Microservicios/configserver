@@ -14,8 +14,8 @@ server:
 
 # Configuración de redis
 redis:
-  host: redis_eco
-  port: 6379
+  host: ${SPRING_REDIS_HOST:redis_eco}
+  port: ${SPRING_REDIS_PORT:6379}
 
 # Configuración de Eureka para el registro del servicio
 eureka:
